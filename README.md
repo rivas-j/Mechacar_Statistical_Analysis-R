@@ -10,9 +10,11 @@ According to our summary results, Vehicle Length and Ground clearance provided a
 
 ![Total Summary](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/cd964e6ac1f5b99184bb34ba3721df5731cb2978/Resources/deliverable2_totalsummary.png)
 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. According to our total summary above, the variance for all manufacturing falls beneath the 100 pound per square inch threshold. 
+
 ![Lot Summary](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/cd964e6ac1f5b99184bb34ba3721df5731cb2978/Resources/deliverable2_lot-summary.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. According to our total summary above, the variance for all manufacturing falls beneath the 100 pound per square inch threshold. However, digging deeper into each lot, we're seeing that Production Lot 3 isn't producing coils that comply with design specifications. Consequently, we can only accept coils from lots 1 and 2, both producing with variance well below the max threshold.
+However, digging deeper into each lot, we're seeing that Production Lot 3 isn't producing coils that comply with design specifications. Consequently, we can only accept coils from lots 1 and 2, both producing with variance well below the max threshold.
 
 ## T-Tests on Suspension Coils
 
@@ -24,3 +26,12 @@ According to the above aggregate T Test, the p-value is above 0.05, indicating t
 ![3 Lot T Test](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/98818cd40fbd004cbe852f50be67065b8cd68f04/Resources/Deliverable3_t-test-3lots.png)
 
 The above T tests separated by lot paints a slightly different story. Lots 1 and 2  contain p-values significantly higher than 0.05, indicating strong statistical similarity between each lot's mean PSI and the 1,500 mean PSI. Lot 3's p-value came in lower than 0.5, indicating that the Mean PSI is not statistically similar to 1,500 mean PSI.
+
+## Study Design: MechaCar vs Competition
+
+We are designing a statistical study that can quantify how the MechaCar performs against the competition. In order to best inform our consumers, we are highlighting the Mechacar's superior gas mileage as a dependent variable, and horsepower as the independent variable. We're comparing these metrics to the competing leading American, European and Japanese Car Manufacturers. Below we will test the following Null and Alternative Hypotheses:
+
+H<sub>0</sub>: If the amount of horsepower does not affect gas mileage, then increasing the amount of horsepower has no effect on gas mileage.
+H<sub>A</sub>: If the amount of horsepower affects gas mileage, then increasing the amount of horsepower will reduce gas mileage.
+
+In order to run a proper comparison between MechaCar and its competitors, we want to run a multiple line p-test. We want to test gas mileage for cars with >500 Horsepower across different manufacturers and compare to a mean of 30 miles per gallon. To accomplish this study, we will need the a data set with the following: Manufacturer, Vehicle Type, Horsepower and MPG. 
