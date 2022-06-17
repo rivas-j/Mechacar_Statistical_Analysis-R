@@ -13,3 +13,14 @@ According to our summary results, Vehicle Length and Ground clearance provided a
 ![Lot Summary](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/cd964e6ac1f5b99184bb34ba3721df5731cb2978/Resources/deliverable2_lot-summary.png)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. According to our total summary above, the variance for all manufacturing falls beneath the 100 pound per square inch threshold. However, digging deeper into each lot, we're seeing that Production Lot 3 isn't producing coils that comply with design specifications. Consequently, we can only accept coils from lots 1 and 2, both producing with variance well below the max threshold.
+
+## T-Tests on Suspension Coils
+
+![T Test](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/98818cd40fbd004cbe852f50be67065b8cd68f04/Resources/Deliverable3_t-test.png)
+
+According to the above aggregate T Test, the p-value is above 0.05, indicating the overall mean PSI is statistically similar with the defined mean PSI of 1,500
+
+
+![3 Lot T Test](https://github.com/rivas-j/Mechacar_Statistical_Analysis/blob/98818cd40fbd004cbe852f50be67065b8cd68f04/Resources/Deliverable3_t-test-3lots.png)
+
+The above T tests separated by lot paints a slightly different story. Lots 1 and 2  contain p-values significantly higher than 0.05, indicating strong statistical similarity between each lot's mean PSI and the 1,500 mean PSI. Lot 3's p-value came in lower than 0.5, indicating that the Mean PSI is not statistically similar to 1,500 mean PSI.
