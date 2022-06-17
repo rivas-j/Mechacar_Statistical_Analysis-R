@@ -22,3 +22,20 @@ total_summary
 
 lot_summary <- suscoil_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 lot_summary
+
+#Deliverable 3
+
+#Use the t.test() function to determine if the PSI across all manufacturing lots is statistically different 
+#from the population mean of 1,500 pounds per square inch.
+t.test(suscoil_df$PSI,mu=1500)
+
+#Use t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from 
+#the population mean of 1,500 pounds per square inch.
+
+Lot1 <-  subset(suscoil_df, Manufacturing_Lot == "Lot1")
+Lot2 <-  subset(suscoil_df, Manufacturing_Lot == "Lot2")
+Lot3 <-  subset(suscoil_df, Manufacturing_Lot == "Lot3")
+
+t.test(Lot1$PSI,mu=1500)
+t.test(Lot2$PSI,mu=1500)
+t.test(Lot3$PSI,mu=1500)
