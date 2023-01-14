@@ -4,7 +4,7 @@
     <img src=images/image.jpg>
 </div>
 
-## <div align="center">Short blurb describing what the tool does</div>
+## <div align="center">Utizlie R Review Vehicle Production Data for Actionable Insights</div>
 
 <p align="center">
 <a href="#goals">Goals</a> &nbsp;&bull;&nbsp;
@@ -15,19 +15,25 @@
 
 # <div align="center">Goals</div>
 
-What should be true after this project is implemented? The objective is to demonstrate the project's value. Edit for clarity and remove any language specific to curriculum (i.e. fictional names, narratives). Make the report seem like a case study, not an assignment. Include a high-level overview of the analysis so that recruiters with limited technical knowledge can understand what your project is about without drilling down.  The key is to make everything easy for employers so they can review more of your work.
+With the power of R, our analytics team will assess vehicle production data to identify solutions to production issues. We plan on performing our analysis as follows:
 
-Sample: Puppy Analysis answers the question, how many puppies were adopted from shelters across the United States during the 2020 Covid-19 pandemic. Observes a total number of dogs adopted, breed demographics, and the number of dogs adopted by a state.”
+- Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+- Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+- Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+- Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers
+
 
 # <div align="center">Dataset</div>
 
-High level explanation of data source
+Our analysis will review two sets of data. The first dataset contains multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. The second dataset, contains the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
-- [Data Set File Name:](data/data_source.format) Explain source of file, size of dataset and format
+- [Mechacar MPG Dataset:](data/MechaCar_mpg.csv) CSV that contains mpg test results for 50 prototype MechaCars, hosted in Amazon S3
+- [Suspension Coil Dataset:](data/Suspension_Coil.csv) CSV that contains 150 rows of results from multiple production lots.
 
 # <div align="center">Tools Used</div>
-- **Tool 1:** Tool purpose
-- **Tool 2:** Tool purpose
+- **R:** Programming language used for statistical modelling, hypothesis testing and implementing machine learning algorithms
+    - **Tidyverse:** R package used to help simplify the process of creating transformed data columns, grouping data using factors, reshaping our two-dimensional data structures, and visualizing our results using plots
+- **R Studio:** An integrated development environment used to help design and test RScripts
 
 # <div align="center">Results</div>
 
@@ -69,4 +75,4 @@ In order to run a proper comparison between MechaCar and its competitors, we wan
 
 # <div align="center">Summary</div>
 
-[Back to top](#project-name)
+[Back to top](#mechacar-statistical-analysis-with-r)
